@@ -1,0 +1,41 @@
+body{
+    background-color: aquamarine;
+}
+#center{
+    filter: grayscale(100%);
+}
+
+#left{
+    filter: opacity(25%);
+}
+
+#right{
+    filter: brightness(50%);
+
+}
+div{
+    color: blue;
+}
+
+#p1{
+    background-image: url("img1.png");
+    background-repeat: repeat;
+    
+}
+h5{
+    background-image: url("img1.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: beige;
+}
+.cmr{
+    color: darkmagenta;
+}
+
+.pos{
+    background-image: url("img1.png");
+    border: 5px solid blue;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color:rgb(114, 104, 104);
+}

@@ -1,0 +1,19 @@
+.fx1{
+    display: flex;
+    background-color: darkcyan;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    align-items: center;
+    text-align: justify;
+}
+.fx1>h2{
+    background-color: lightgray;
+    margin: 20px;
+    padding: 30px;
+    font-size: 40px;
+}
+body{
+    background-color: lightyellow;
+
+}

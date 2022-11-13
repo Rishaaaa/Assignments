@@ -1,0 +1,14 @@
+body{
+    background-color: gray;
+}
+h5{
+    color: aquamarine;
+    border: 2px solid red;
+    border-width: 5px;
+    
+
+}
+p{
+    color: red;
+    background-color: beige;
+}

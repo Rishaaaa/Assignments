@@ -1,0 +1,48 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+p{
+    color: red;
+    border: 3px solid green;
+}
+p.p1{
+display: none;
+}
+p.p2{
+    display: inline;
+}
+p.p3{
+    display: block;
+}
+p.p4{
+    display: inline-block;
+}
+div.f1{
+    background-color: lightpink;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+div.f2{
+    background-color: lightpink;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+div.f3{
+    background-color: lightpink;
+    width: 100px;
+    height: 100px;
+    overflow:auto
+}
+div.f4{
+    background-color: lightpink;
+    width: 200px;
+    height: 100px;
+    overflow: visible;
+}
+p.Op{
+    background-color: darkblue;
+    opacity: 0.5;
+}

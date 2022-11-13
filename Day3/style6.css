@@ -1,0 +1,25 @@
+.res{
+    width: 100%;
+    height: auto;
+}
+div:hover{
+    width: 300px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 5s;
+}
+p{
+    width: 100px;
+    height: 100px;
+    background-color: darkgoldenrod;
+    animation-name: anime;
+    animation-duration: 5s;
+}
+
+@keyframes anime{
+    from{background-color:violet;}
+    to{background-color:red;}
+}
