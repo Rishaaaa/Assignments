@@ -1,0 +1,104 @@
+SQL*Plus: Release 10.2.0.1.0 - Production on Tue Nov 22 07:29:20 2022
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+
+SQL> create table Student(usn varchar(20) primary key,Name varchar(30),address varchar(30),sem varch
+ar(10),phoneNo varchar(20));
+
+Table created.
+
+SQL> select * from Student;
+
+no rows selected
+
+SQL> insert into Student values('123','Nidhi','Bangalore','3','2335446');
+
+1 row created.
+
+SQL> insert into Student values('124','Ara','Chennai','2','2335646');
+
+1 row created.
+
+SQL> insert into Student values('127','Sanjana','Hyderabad','2','2335466');
+
+1 row created.
+
+SQL> select * from Student;
+
+USN                  NAME
+-------------------- ------------------------------
+ADDRESS                        SEM        PHONENO
+------------------------------ ---------- --------------------
+123                  Nidhi
+Bangalore                      3          2335446
+
+124                  Ara
+Chennai                        2          2335646
+
+127                  Sanjana
+Hyderabad                      2          2335466
+
+
+SQL> Select Name,address from Student;
+
+NAME                           ADDRESS
+------------------------------ ------------------------------
+Nidhi                          Bangalore
+Ara                            Chennai
+Sanjana                        Hyderabad
+
+
+SQL> select Name,address,sem from Student where sem='2';
+
+NAME                           ADDRESS                        SEM
+------------------------------ ------------------------------ ----------
+Ara                            Chennai                        2
+Sanjana                        Hyderabad                      2
+
+SQL> update Student set address='Trichy' where Name='Ara';
+
+1 row updated.
+
+SQL> select * from Student;
+
+USN                  NAME
+-------------------- ------------------------------
+ADDRESS                        SEM        PHONENO
+------------------------------ ---------- --------------------
+123                  Nidhi
+Bangalore                      3          2335446
+
+124                  Ara
+Trichy                         2          2335646
+
+127                  Sanjana
+Hyderabad                      2          2335466
+
+
+SQL> delete from Student where name='Sanjana';
+
+1 row deleted.
+
+SQL> select * from Student;
+
+USN                  NAME
+-------------------- ------------------------------
+ADDRESS                        SEM        PHONENO
+------------------------------ ---------- --------------------
+123                  Nidhi
+Bangalore                      3          2335446
+
+124                  Ara
+Trichy                         2          2335646
+
+
+SQL> commit;
+
+Commit complete.
+
+SQL> 
