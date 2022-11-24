@@ -1,0 +1,114 @@
+#contact h2,
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+#about p {
+    color: black;
+}
+
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: darkslategrey;
+}
+
+#hero h1 {
+    font-size: 2em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#hero {
+    background-image: url('img/header2.jpg');
+}
+
+#gallery {
+    background-image: url('img/tutor.jpg');
+}
+
+#about {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('img/OrganDonor_article.jpg');
+}
+
+#contact {
+    background-image: url('img/footer.jpg');
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.content {
+    border: 5px solid green;
+    width: 2000px;
+    height: 200px;
+}
+
+table {
+    padding: 10px;
+    border-spacing: 10px;
+    border-color: antiquewhite;
+}

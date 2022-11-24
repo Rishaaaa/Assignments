@@ -1,0 +1,119 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="validate.js"></script>
+    <style>
+        body {
+            margin-top: 50px;
+            background-color: lightgrey;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="insertion.php" method="post" name="donarcard" onSubmit="return(validate());">
+
+        <table cellpadding="4" width="50%" bgcolor="gray" align="center" cellspacing="5">
+
+
+            <tr>
+
+                <td colspan=2>
+
+                    <center>
+                        <font size=6><b>Login Form</b></font>
+                    </center>
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>FirstName</td>
+
+                <td><input type="text" name="firstname" id="firstname" size="30"></td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Last Name</td>
+
+                <td><input type="text" name="lastname" id="lastname" size="30"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Age</td>
+
+                <td><input type="text" name="age1" id="age1" size="30"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Sex</td>
+
+                <td><input type="radio" name="sex" value="male" size="10">Male
+
+                    <input type="radio" name="sex" value="Female" size="10">Female</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>Country</td>
+
+                <td><input type="text" name="country" id="country" size="30"></td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>PinCode</td>
+
+                <td><input type="text" name="pincode" id="pincode" size="30"></td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>EmailId</td>
+
+                <td><input type="text" name="emailid" id="emailid" size="30"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>MobileNo</td>
+
+                <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+
+            </tr>
+
+            <tr>
+
+                <td><input type="reset"></td>
+
+                <td colspan="2"><input type="submit" value="Submit Form" /></td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
